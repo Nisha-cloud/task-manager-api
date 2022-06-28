@@ -64,9 +64,9 @@ const jwt = require('jsonwebtoken')
 
 
 
-const main = async () => {
-    const user = await User.findById('628ff1de88a75f0b10dde0b7')
-    await user.populate('tasks').execPopulate()
-    console.log(user.tasks)
-}
-main()
+// const main = async () => {
+//     const user = await User.findById('628ff1de88a75f0b10dde0b7')
+//     await user.populate('tasks').execPopulate()
+//     console.log(user.tasks)
+// }
+// main()

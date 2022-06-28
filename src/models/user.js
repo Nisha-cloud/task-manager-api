@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const Task = require('./task')
 const validator = require('validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')

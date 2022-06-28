@@ -1,4 +1,5 @@
 const express = require('express')
+const Task = require('../models/task')
 // const res = require('express/lib/response')
 const router = new express.Router()
 const User = require('../models/user')
@@ -133,6 +134,7 @@ router.delete('/users/me', auth, async(req,res) => {
         res.send(req.user)
     } catch (error) {
         res.status(400).send(error)
+        console.log(error)
         
     }
 })
